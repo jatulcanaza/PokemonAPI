@@ -1,3 +1,5 @@
+version: "3.9"
+
 services:
   db:
     image: postgres:16
@@ -13,13 +15,9 @@ services:
       - "5432:5432"
 
   backend:
-    image: ${DOCKERHUB_USER}pokeapp-backend:latest
-    build:
-      context: ./backend
-      dockerfile: Dockerfile
+    image: juantulcanaza/pokeapp-backend:latest
     container_name: poke_backend
     restart: unless-stopped
-    pull_policy: always
     ports:
       - "3000:3000"
     depends_on:
@@ -29,16 +27,11 @@ services:
       - DB_USER=postgres
       - DB_PASS=admin
       - DB_NAME=poke_users
-    command: ["node", "wait-server.js"]
 
   frontend:
-    image: ${DOCKERHUB_USER}pokeapp-frontend:latest
-    build:
-      context: ./frontend
-      dockerfile: Dockerfile
+    image: juantulcanaza/pokeapp-frontend:latest
     container_name: poke_frontend
     restart: unless-stopped
-    pull_policy: always
     ports:
       - "8080:80"
     depends_on:
