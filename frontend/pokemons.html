@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscador Pokémon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="buscador-bg">
+  <header>
+    <img src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png" alt="Pokémon" class="banner">
+    <h1>Busca tu Pokémon</h1>
+  </header>
+
+  <div id="app-container">
+    <input type="text" id="search" placeholder="Ej: pikachu, charmander..." autocomplete="on">
+    <ul id="suggestions"></ul>
+
+    <h2>Detalles</h2>
+    <div id="details"></div><br>
+
+    <button id="logoutBtn">Cerrar Sesión</button>
+  </div>
+
+  <script src="pokemons.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    text-align: center;
+    color: #333;
+  }
+  
+  /* --- LOGIN --- */
+  .login-bg {
+    background: linear-gradient(to right, #ffcb05, #3b4cca);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #login-container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    width: 300px;
+  }
+  
+  #logo {
+    width: 120px;
+  }
+  
+  input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 90%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  button {
+    background: #3b4cca;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #2a2ba0;
+  }
+  
+  #errorMsg {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+  }
+  
+  /* --- BUSCADOR --- */
+  .buscador-bg {
+    background: url('https://wallpapercave.com/uwp/uwp4644279.jpeg') no-repeat center center/cover;
+    min-height: 100vh;
+    color: #fff;
+  }
+  
+  header {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+  }
+  
+  header h1 {
+    margin: 10px 0 0;
+  }
+  
+  .banner {
+    width: 150px;
+  }
+  
+  #app-container {
+    background: rgba(255,255,255,0.9);
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 15px;
+    width: 350px;
+    color: #000;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px auto;
+    width: 250px;
+    text-align: left;
+    border: 1px solid #ddd;
+    background: white;
+    max-height: 150px;
+    overflow-y: auto;
+    border-radius: 6px;
+  }
+  
+  li {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  li:hover {
+    background: #eee;
+  }
+  
+  #details {
+    margin-top: 20px;
+    background: #f7f7f7;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  #details img {
+    width: 100px;
+  }
+  
+  #logoutBtn {
+    margin-top: 20px;
+    background: crimson;
+  }
+  
+  #logoutBtn:hover {
+    background: darkred;
+  }
+  
