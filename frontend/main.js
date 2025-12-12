@@ -13,7 +13,7 @@ document.getElementById("loginBtn").addEventListener("click", async () => {
 
   if (res.ok) {
     localStorage.setItem("token", data.token);
-    msg.textContent = "✅ Bienvenido, redirigiendo...";
+    msg.textContent = "Bienvenido, redirigiendo...";
     setTimeout(() => {
       window.location.href = "pokemons.html";
     }, 1500);

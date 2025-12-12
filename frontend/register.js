@@ -5,7 +5,7 @@ document.getElementById("registerSubmitBtn").addEventListener("click", async () 
   
     if (!username || !password) {
       msg.style.color = "red";
-      msg.textContent = "❌ Por favor, completa todos los campos";
+      msg.textContent = "Por favor, completa todos los campos";
       return;
     }
   
@@ -21,7 +21,7 @@ document.getElementById("registerSubmitBtn").addEventListener("click", async () 
   
       if (res.ok) {
         msg.style.color = "green";
-        msg.textContent = `✅ Usuario ${username} registrado con éxito! Redirigiendo al login...`;
+        msg.textContent = `Usuario ${username} registrado con éxito! Redirigiendo al login...`;
         setTimeout(() => {
           window.location.href = "index.html"; // vuelve al login
         }, 1500);
@@ -31,7 +31,7 @@ document.getElementById("registerSubmitBtn").addEventListener("click", async () 
       }
     } catch (error) {
       msg.style.color = "red";
-      msg.textContent = "❌ Error al registrar el usuario";
+      msg.textContent = "Error al registrar el usuario";
     }
   });
   

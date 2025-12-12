@@ -3,9 +3,9 @@ const { Pool } = pkg;
 
 const pool = new Pool({
   host: process.env.DB_HOST || "db",
-  user: process.env.DB_USER || "postgres",
-  password: process.env.DB_PASS || "admin",
-  database: process.env.DB_NAME || "poke_users",
+  user: process.env.DB_USER,
+  password: process.env.DB_PASS,
+  database: process.env.DB_NAME,
   port: 5432
 });
 
@@ -20,7 +20,8 @@ const pool = new Pool({
   `;
   try {
     await pool.query(query);
-    console.log("✅ Tabla 'users' lista en PostgreSQL");
+    console.log("Tabla 'users' lista en PostgreSQL");
+
     const queryLogs = `
       CREATE TABLE IF NOT EXISTS search_logs (
         id SERIAL PRIMARY KEY,
@@ -30,9 +31,9 @@ const pool = new Pool({
       );
     `;
     await pool.query(queryLogs);
-    console.log("✅ Tabla 'search_logs' lista en PostgreSQL");
+    console.log("Tabla 'search_logs' lista en PostgreSQL");
   } catch (err) {
-    console.error("❌ Error al crear tabla:", err);
+    console.error("Error al crear tabla:", err);
   }
 })();
 
