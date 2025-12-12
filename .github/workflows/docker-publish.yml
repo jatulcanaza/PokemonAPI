@@ -6,7 +6,7 @@ on:
 
 env:
   ASG_NAME: "app-lt-20251212162822636500000001"
-  DOCKER_IMAGE: "juantulcanaza/hello-asg:v1"
+  DOCKER_IMAGE: "juantulcanaza/pokeapp-backend:latest"
 
 jobs:
 
