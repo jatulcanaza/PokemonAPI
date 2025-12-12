@@ -5,7 +5,7 @@ on:
     branches: ["main"]
 
 env:
-  ASG_NAME: "app-lt-20251212162822636500000001"
+  ASG_NAME: "hello-asg"
   DOCKER_IMAGE: "juantulcanaza/pokeapp-backend:latest"
 
 jobs:
