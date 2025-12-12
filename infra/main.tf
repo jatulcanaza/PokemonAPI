@@ -94,7 +94,7 @@ resource "aws_launch_template" "app_lt" {
 
   # ---------- USER DATA ----------
   user_data = base64encode(<<-EOF
-user_data = base64encode(<<-EOF
+
     #!/bin/bash
 
     # detener apache si está instalado
